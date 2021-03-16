@@ -1,12 +1,11 @@
 const Twitter = require('twitter');
-const config = require('./config.json')
 const got = require('got');
 
 const client = new Twitter({
-    consumer_key: config.twtAPIKey || process.env.twtAPIKey,
-    consumer_secret: config.twtAPISecret || process.env.twtAPISecret,
-    access_token_key: config.twtUserToken || process.env.twtUserToken,
-    access_token_secret: config.twtUserSecret || process.env.twtUserSecret
+    consumer_key: process.env.twtAPIKey,
+    consumer_secret: process.env.twtAPISecret,
+    access_token_key: process.env.twtUserToken,
+    access_token_secret: process.env.twtUserSecret
 });
 async function postTweet() {
     try {
