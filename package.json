@@ -4,7 +4,8 @@
   "description": "A Twitter bot to send an image of an Anime character after X amount of time.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "author": "void206551",
   "license": "MIT",
